@@ -52,8 +52,10 @@ function runChildProcesses(dirsToVisit, maxAtOnce) {
 
             const url = dirsToVisit[index++];
 
-            const child = spawn(`URL=${url} npm run pa11y`, [], { shell: true });
-            
+            const cmd = `cross-env URL=${url} node pa11y.js`
+
+            const child = spawn(cmd, [], { shell: true });
+
             logYellow(`Open: ${index} - ${url}`);
 
             child.stdout.on('data', (urlData) => {
