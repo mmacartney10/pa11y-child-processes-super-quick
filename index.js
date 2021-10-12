@@ -52,9 +52,8 @@ function runChildProcesses(dirsToVisit, maxAtOnce) {
 
             const url = dirsToVisit[index++];
 
-            const args = [ url ];
-            const child = spawn(pa11yPath, args, { shell: true });
-
+            const child = spawn(`URL=${url} npm run pa11y`, [], { shell: true });
+            
             logYellow(`Open: ${index} - ${url}`);
 
             child.stdout.on('data', (urlData) => {

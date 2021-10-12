@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "pa11y": "URL=https://www.google.com node pa11y.js"
   },
   "keywords": [],
   "author": "",
