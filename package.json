@@ -1,0 +1,15 @@
+{
+  "name": "pa11y-child-processes-super-quick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pa11y": "^6.0.1"
+  }
+}
