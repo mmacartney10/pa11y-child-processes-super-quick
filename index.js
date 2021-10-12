@@ -86,7 +86,7 @@ function runChildProcesses(dirsToVisit, maxAtOnce) {
 
             const sortedIssues = sortDateByIssue(data);
 
-            writeFile('./data/output.json', JSON.stringify(data), 'utf8', () => {
+            writeFile('./data/output.json', JSON.stringify(sortedIssues), 'utf8', () => {
                 console.log('Written to ./data/output.json');
             });
 
