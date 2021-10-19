@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env node index.js",
-    "pa11y": "cross-env URL=https://www.google.com node pa11y.js"
+    "pa11y": "cross-env URL=https://www.southeasternrailway.co.uk/seatfinder-feedback node pa11y.js"
   },
   "keywords": [],
   "author": "",
